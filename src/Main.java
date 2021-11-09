@@ -65,17 +65,17 @@ public class Main {
         // Implements five stack related methods, apart from the methods from the List interface
         // These are: push, pop, peek, empty, and search
         // Creation
-        Stack<String> stackNames = new Stack<>();
+        //Stack<String> stackNames = new Stack<>();
         // Inserting (if used as a stack)
-        stackNames.push("Alice");
-        stackNames.push("Bob");
-        stackNames.push("Charlie");
+        //stackNames.push("Alice");
+        //stackNames.push("Bob");
+        //stackNames.push("Charlie");
         // Accessing (the top element)
         System.out.println("*** Stack ***");
-        System.out.println("Top element: " + stackNames.peek());
-        System.out.println(stackNames.pop());
-        System.out.println(stackNames.pop());
-        System.out.println(stackNames.pop());
+        //System.out.println("Top element: " + stackNames.peek());
+        //System.out.println(stackNames.pop());
+        //System.out.println(stackNames.pop());
+        //System.out.println(stackNames.pop());
 
         // LinkedList
         // Implements a linked list structure
@@ -128,7 +128,36 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        oldCollectionStructures();
-        collectionsFramework();
+        ArrayStack arrStack = new ArrayStack();
+        arrStack.push(10);
+        arrStack.push(20);
+        arrStack.push(30);
+        arrStack.push(40);
+        arrStack.push(50);
+        arrStack.push(60);
+        arrStack.push(70);
+        arrStack.push(80);
+        arrStack.push(90);
+        arrStack.push(100);
+        arrStack.push(110);
+
+//        Stack myStack = new Stack();
+//        myStack.push(10);
+//        myStack.push(20);
+//        myStack.push(30);
+//
+//        System.out.println(myStack.pop());
+//        System.out.println(myStack.pop());
+//        System.out.println(myStack.pop());
+//
+//        Stack stack = new Stack();
+//        for(int i = 1; i < 20; i++) {
+//            stack.push(i);
+//        }
+//
+//        int numsOnStack = stack.length();
+//        for(int i = 0; i < numsOnStack; i++) {
+//            System.out.println(stack.pop());
+//        }
     }
 }
