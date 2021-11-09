@@ -141,6 +141,12 @@ public class Main {
         arrStack.push(100);
         arrStack.push(110);
 
+        for(int i = 0; i < 11; i++) {
+            System.out.println(arrStack.pop());
+        }
+        arrStack.push(110);
+
+
 //        Stack myStack = new Stack();
 //        myStack.push(10);
 //        myStack.push(20);

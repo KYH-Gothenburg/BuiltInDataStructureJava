@@ -13,6 +13,21 @@ public class ArrayStack {
         top = -1;
     }
 
+    public int pop() {
+        if(top >= 0) {
+            int value = internalStack[top];
+            top--;
+            if(top < internalStack.length - CAPACITY_INCREASE) {
+                int[] newArr = new int[internalStack.length - CAPACITY_INCREASE];
+                arraycopy(internalStack, 0, newArr, 0, newArr.length);
+                internalStack = newArr;
+            }
+            return value;
+        }
+        throw new IndexOutOfBoundsException("Pop on empty stack");
+    }
+
+
     public void push(int data) {
         // When pushing, increase top, so it points at the new position in the internal stack
         top++;
