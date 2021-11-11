@@ -128,23 +128,64 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        ArrayStack arrStack = new ArrayStack();
-        arrStack.push(10);
-        arrStack.push(20);
-        arrStack.push(30);
-        arrStack.push(40);
-        arrStack.push(50);
-        arrStack.push(60);
-        arrStack.push(70);
-        arrStack.push(80);
-        arrStack.push(90);
-        arrStack.push(100);
-        arrStack.push(110);
+        ArrayPriorityQueue apq = new ArrayPriorityQueue();
+        apq.enqueue(34);
+        apq.enqueue(23);
+        apq.enqueue(1);
+        apq.enqueue(17);
+        apq.enqueue(6);
 
-        for(int i = 0; i < 11; i++) {
-            System.out.println(arrStack.pop());
-        }
-        arrStack.push(110);
+        System.out.println(apq.dequeue());
+        System.out.println(apq.dequeue());
+        System.out.println(apq.dequeue());
+        System.out.println(apq.dequeue());
+        System.out.println(apq.dequeue());
+//        ArrayQueue queue = new ArrayQueue();
+//        for(int i = 0; i < 11; i++) {
+//            queue.enqueue(i);
+//        }
+//
+//        System.out.println(queue.dequeue());
+//        System.out.println(queue.dequeue());
+//        System.out.println(queue.dequeue());
+//        System.out.println(queue.dequeue());
+//        queue.enqueue(99);
+//        queue.enqueue(109);
+//        queue.enqueue(119);
+//        queue.enqueue(129);
+//        queue.enqueue(139);
+//        queue.enqueue(149);
+//        ArrayListPriorityQueue pq = new ArrayListPriorityQueue();
+//        pq.enqueue(4);
+//        pq.enqueue(1);
+//        pq.enqueue(14);
+//        pq.enqueue(22);
+//        pq.enqueue(3);
+//        pq.enqueue(7);
+//
+//        while(!pq.empty()){
+//            System.out.println(pq.dequeue());
+//        }
+
+//        ArrayListStack stack = new ArrayListStack();
+//        System.out.println(stack.peek());
+//        ArrayStack arrStack = new ArrayStack();
+//        arrStack.push(10);
+//        arrStack.push(20);
+//        arrStack.push(30);
+//        arrStack.push(40);
+//        arrStack.push(50);
+//        arrStack.push(60);
+//        arrStack.push(70);
+//        arrStack.push(80);
+//        arrStack.push(90);
+//        arrStack.push(100);
+//        arrStack.push(110);
+//
+//        for(int i = 0; i < 11; i++) {
+//            System.out.println(arrStack.pop());
+//        }
+//        arrStack.push(110);
 
 
 //        Stack myStack = new Stack();
